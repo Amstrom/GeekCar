@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nsv"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SelectGame"
+    tools:showIn="@layout/activity_select_game">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:text="Select a subject"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rbg_Subject"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp">
+
+            <RadioButton
+                android:id="@+id/rbtn_Math"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Maths" />
+
+            <RadioButton
+                android:id="@+id/rbtn_Science"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Science" />
+
+            <RadioButton
+                android:id="@+id/rbtn_History"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="History" />
+
+            <RadioButton
+                android:id="@+id/rbtn_IT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="IT" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Select Game Mode"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/rbg_GameMode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/radioButton10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/mode1" />
+
+            <RadioButton
+                android:id="@+id/radioButton11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/mode2" />
+
+            <RadioButton
+                android:id="@+id/radioButton12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/mode3"
+                android:visibility="invisible" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_Start"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="160dp"
+            android:text="Start" />
+
+        <TextView
+            android:id="@+id/txt_RoomId"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#0000FF" />
+
+        <TextView
+            android:id="@+id/txt_MyName"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:layout_marginBottom="30dp"
+            android:textColor="#FF0000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_opponentName"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_marginTop="-20dp"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_StartGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Play" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

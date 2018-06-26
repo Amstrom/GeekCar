@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sahandilshan.geekcartest">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StartGame" />
+        <activity
+            android:name=".SelectGame"
+            android:label="@string/title_activity_select_game"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".BluetoothDevices" />
+        <activity android:name=".JoinGame" />
+        <activity android:name=".LaunchGame" />
+        <activity android:name=".Finish" />
+        <activity android:name=".TestCar" />
+        <activity
+            android:name=".CreateUser"
+            android:label="@string/title_activity_create_user"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LaunchGame2"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LaunchGame2">
+
+    <TextView
+        android:id="@+id/txtA2"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/txtA1"
+        android:layout_alignStart="@+id/txtA1"
+        android:layout_below="@+id/txtA1"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="36dp"
+        android:hint="fff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtA1" />
+
+    <TextView
+        android:id="@+id/txtQueston"
+        android:layout_width="361dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtA1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtQueston"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="56dp"
+        android:hint="fff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtQueston" />
+
+    <TextView
+        android:id="@+id/txtA3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtA2"
+        android:layout_alignStart="@+id/txtA2"
+        android:layout_below="@+id/txtA2"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="36dp"
+        android:hint="fff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtA2" />
+
+    <TextView
+        android:id="@+id/txtA4"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtA3"
+        android:layout_alignStart="@+id/txtA3"
+        android:layout_below="@+id/txtA3"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="36dp"
+        android:hint="fff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtA3" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtQueston"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txtQueston"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:text="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtA4" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btn4"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:text="3"
+        app:layout_constraintStart_toEndOf="@+id/btn2"
+        app:layout_constraintTop_toBottomOf="@+id/txtA4"
+        tools:ignore="RtlCompat" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btn1"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:text="4"
+        app:layout_constraintStart_toEndOf="@+id/btn3"
+        app:layout_constraintTop_toBottomOf="@+id/txtA4" />
+
+    <Button
+        android:id="@+id/btn_Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="148dp"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/txtA1"
+        android:layout_alignBottom="@+id/txtA1"
+        android:layout_alignLeft="@+id/txtQueston"
+        android:layout_alignStart="@+id/txtQueston"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="56dp"
+        android:text="1."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtA1"
+        app:layout_constraintTop_toBottomOf="@+id/txtQueston" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBaseline="@+id/txtA2"
+        android:layout_alignBottom="@+id/txtA2"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="40dp"
+        android:text="2."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtA2"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignEnd="@+id/textView8"
+        android:layout_alignRight="@+id/textView8"
+        android:layout_alignTop="@+id/txtA3"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="36dp"
+        android:text="3."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtA3"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignEnd="@+id/textView9"
+        android:layout_alignRight="@+id/textView9"
+        android:layout_alignTop="@+id/txtA4"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="40dp"
+        android:text="4."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtA4"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btn4"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:text="2"
+        app:layout_constraintStart_toEndOf="@+id/btn1"
+        app:layout_constraintTop_toBottomOf="@+id/txtA4" />
+
+</android.support.constraint.ConstraintLayout>
