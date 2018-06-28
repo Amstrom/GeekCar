@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Geek Wheel</string>
     <string name="line">or</string>
-    <string name="title_activity_select_game">select game</string>
+    <string name="title_activity_select_game">Select Game</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 

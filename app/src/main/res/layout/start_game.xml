@@ -7,6 +7,8 @@
     android:layout_height="match_parent"
     android:layout_marginLeft="0dp"
     android:layout_marginRight="0dp"
+    android:alpha="0.9"
+    android:background="@drawable/startGame"
     tools:context=".StartGame">
 
     <Button
@@ -17,11 +19,15 @@
         android:layout_alignParentTop="true"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="108dp"
+        android:alpha="0.6"
+        android:background="#241f1f"
         android:text="Start Game"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textColor="@android:color/white" />
 
     <Button
         android:id="@+id/btn_joinGame"
@@ -32,11 +38,15 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="40dp"
+        android:alpha="0.6"
         android:text="Join Game"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_StartGame" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_StartGame"
+        tools:backgroundTint="#241f1f" />
 
     <Button
         android:id="@+id/btn_Practice"
@@ -47,19 +57,29 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="40dp"
+        android:alpha="0.6"
+        android:background="#241f1f"
         android:text="Pratice"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_joinGame" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_joinGame"
+        tools:textColor="#ffffff" />
 
     <TextView
         android:id="@+id/txtName"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="17dp"
-        android:textSize="20dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="asfsdf"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -71,7 +91,11 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="40dp"
+        android:alpha="0.6"
+        android:background="#241f1f"
         android:text="Change Car"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_Practice" />
@@ -83,9 +107,13 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="180dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
+        android:alpha="0.7"
+        android:background="#241f1f"
         android:text="Log Out"
         android:textAllCaps="?android:attr/windowOverscan"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_ChangeCar" />
 
